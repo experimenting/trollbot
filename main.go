@@ -6,6 +6,10 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
+
+	"github.com/experimenting/trollbot/repo"
+	"github.com/experimenting/trollbot/troll"
+	"github.com/experimenting/trollbot/ui"
 )
 
 func main() {
@@ -23,12 +27,12 @@ func main() {
 	if err != nil {
 		log.Fatalf("error: on filename %s %v", os.Args[2], err)
 	}
-	feedRepo := NewInMemoryFeedRepoFromYML(filenameFeed)
-	dataRepo := NewInMemoryVarRepositoryFromYML(filenameData)
+	feedRepo := repo.NewInMemoryFeedRepoFromYML(filenameFeed)
+	dataRepo := repo.NewInMemoryVarRepositoryFromYML(filenameData)
 
-	tr := NewTroll(feedRepo, dataRepo)
+	tr := troll.NewTroll(feedRepo, dataRepo)
 
-	if err = ListenSlack(token, tr); err != nil {
+	if err = ui.ListenSlack(token, tr); err != nil {
 		fmt.Print(err)
 	}
 
