@@ -43,7 +43,7 @@
 - text: Oh this is bool-shit
   tags: [disgusted,boolean,solution]
 - text: TDD? I Use a `curl` to test it
-  tags:  [solution, tdd]
+  tags: [solution, tdd]
 - text: "#make{{ buzzword }}greatagain"
   tags: [topic]
 - text: I had your problem too-I used Regex.
