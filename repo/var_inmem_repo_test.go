@@ -1,11 +1,19 @@
 package repo
 
-import "testing"
+import (
+	"os"
+	"path/filepath"
+	"testing"
+)
 
 func TestNewInMemoryVarRepositoryGetRandomUniqueVar(t *testing.T) {
-	repo := NewInMemoryVarRepository()
+
+	strd, _ := os.Getwd()
+
+	filename, _ := filepath.Abs(strd + "/fixture.yml")
+	repo := NewInMemoryVarRepositoryFromYML(filename)
 	varN := "language"
-	preLen := len(repo.Data[varN])
+
 	str, err := repo.GetRandomUniqueVar(varN)
 	if err != nil {
 		t.Error("Error getting random Var", err)
@@ -13,8 +21,6 @@ func TestNewInMemoryVarRepositoryGetRandomUniqueVar(t *testing.T) {
 	if len(str) <= 0 {
 		t.Error("Error", str, "is empty")
 	}
-	if preLen <= len(repo.Data[varN]) {
-		t.Error("After getting the var the var should be removed len after and before is the same :|", preLen, len(repo.Data))
-	}
+
 	t.Log("Ok var is", str)
 }

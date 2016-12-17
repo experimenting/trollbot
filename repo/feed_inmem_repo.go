@@ -19,17 +19,6 @@ type InMemoryFeedRepo struct {
 	Feeds []troll.Feed
 }
 
-// NewInMemoryFeedRepo consuctor for InMemory
-func NewInMemoryFeedRepo() *InMemoryFeedRepo {
-	feeds := []troll.Feed{
-		{
-			Text: "What's the best programming language? {{ language }}",
-			Tags: []string{"tag1", "tag2"},
-		},
-	}
-	return &InMemoryFeedRepo{feeds}
-}
-
 // NewInMemoryFeedRepoFromYML consuctor for InMemory
 func NewInMemoryFeedRepoFromYML(filename string) *InMemoryFeedRepo {
 	feeds, err := loadFeedsFrom(filename)

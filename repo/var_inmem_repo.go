@@ -11,19 +11,12 @@ import (
 	yaml "gopkg.in/yaml.v2"
 )
 
-// VarRepository is the structure for the In memory repository
+// InMemoryVarRepository is the structure for the In memory repository
 type InMemoryVarRepository struct {
 	Data map[string][]string
 }
 
-func NewInMemoryVarRepository() *InMemoryVarRepository {
-	data := map[string][]string{
-		"language": []string{"php", "nodejs"},
-	}
-	rand.Seed(time.Now().Unix())
-	return &InMemoryVarRepository{data}
-}
-
+// NewInMemoryVarRepositoryFromYML Factory method from YML
 func NewInMemoryVarRepositoryFromYML(filename string) *InMemoryVarRepository {
 	var err error
 	var data map[string][]string
@@ -33,6 +26,29 @@ func NewInMemoryVarRepositoryFromYML(filename string) *InMemoryVarRepository {
 	}
 	rand.Seed(time.Now().Unix())
 	return &InMemoryVarRepository{data}
+}
+
+// GetAllTopics
+func (r *InMemoryVarRepository) GetAllTopics() []string {
+	topics := make([]string, len(r.Data))
+	for k := range r.Data {
+		topics = append(topics, k)
+	}
+
+	return topics
+}
+
+// GetRandomUniqueVar
+func (r *InMemoryVarRepository) GetRandomUniqueVar(varType string) (s string, err error) {
+
+	if len(r.Data[varType]) <= 0 {
+		err = fmt.Errorf("VarType '%s' not exists or empty", varType)
+		return s, err
+	}
+
+	index := rand.Intn(len(r.Data[varType]))
+
+	return r.Data[varType][index], nil
 }
 
 func loadDataFrom(filename string) (data map[string][]string, err error) {
@@ -51,25 +67,4 @@ func loadDataFrom(filename string) (data map[string][]string, err error) {
 	}
 
 	return
-}
-
-func (r *InMemoryVarRepository) GetAllTopics() []string {
-	topics := make([]string, len(r.Data))
-	for k := range r.Data {
-		topics = append(topics, k)
-	}
-
-	return topics
-}
-
-func (r *InMemoryVarRepository) GetRandomUniqueVar(varType string) (s string, err error) {
-
-	if len(r.Data[varType]) <= 0 {
-		err = fmt.Errorf("VarType '%s' not exists or empty", varType)
-		return s, err
-	}
-
-	index := rand.Intn(len(r.Data[varType]))
-
-	return r.Data[varType][index], nil
 }
