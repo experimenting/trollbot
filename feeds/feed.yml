@@ -1,0 +1,134 @@
+- text: Don't use @here in chat.
+  tags: [disturb]
+- text: What's the best programming language?
+  tags: [question]
+- text: PLEASE DO NOT WRITE IN UPPERCASE.
+  tags: [disturb]
+- text: You bore me
+  tags: [insult]
+- text: Is everybody sleeping? Ping.Ping.Ping. Damn Ping.
+  tags: [pong, sleep]
+- text: YOU ARE SERIOUSLY CONFUSED RIGHT NOW 
+  tags: [insult]
+- text: Is there anyone bright here?
+  tags: [question]
+- text: IS THIS SUPPOSED TO BE IMPORTANT? 
+  tags: [insult]
+- text: A ROCK WOULD BE MORE INTERESTING TO TALK TO
+  tags: [insult]
+- text: THAT DOESN'T MEAN ANYTHING. YOUR ENTIRE LIFE MEANS NOTHING, DOESN'T IT?
+  tags: [nonsense, insult]
+- text: What's the best IDE?
+  tags: [question]
+- text: "For me {{ language }} is better then {{ language }}"
+  tags: [compare, language]
+- text: "{{ ide }} is better then {{ ide }}"
+  tags: [compare, ide]
+- text: I don't get all this hype for {{ buzzword }}
+  tags: [disgusted]
+- text: I'm looking for a senior developer for an internship
+  tags: [disturb]
+- text: Dumbest thread since China bombed Pearl Harbor.
+  tags: [disturb]
+- text: I never met developer who test code.
+  tags: [disturb]
+- text: I have a problem.
+  tags: [dumb]
+- text: Have tried to use {{ buzzword }} for your problem?
+  tags: [solution]
+- text: About your question, did you already try the {{ vip }} method?
+  tags: [disturb]
+- text: WTF stands for waterfall?
+  tags: [question]
+- text: Oh this is bool-shit
+  tags: [disgusted,boolean,solution]
+- text: TDD? I Use a `curl` to test it
+  tags:  [solution, tdd]
+- text: "#make{{ buzzword }}greatagain"
+  tags: [topic]
+- text: I had your problem too-I used Regex.
+  tags: [solution]
+- text: This question is a stress-test to the whole group.
+  tags: [solution]
+- text: This is fake.
+  tags: [solution]
+- text: OMG {{ vip }} is dead!
+  tags: [vip]
+- text: Einstein build Frankenstein?
+  tags: ["disturb", "question"]
+- text: I need to build a website for billions of user in real time in {{ language }},do you have any suggestion?
+  tags: [question]
+- text: Please can you leave this group?
+  tags: [disgusted]
+- text: I had a problem so I used threads. NoIw prvoeb halema maey.
+  tags: [disturb]
+- text: "m new to PHP and I can't figure out what the rules are for using the echo function. For example, if I need to echo a large block of css/js, do I need to add echo to each line of text or is there a way to echo a large block of code with a single echo?
+
+When I try to echo a big block of code like this one, I get an error:
+
+if (is_single()) {
+echo '<link type='text/css' rel='stylesheet' href='http://jotform.com/css/styles/form.css'/><style type='text/css'> 
+.form-label{
+width:150px !important;
+}
+.form-label-left{
+width:150px !important;
+}
+.form-line{
+padding:10px;
+}
+.form-label-right{
+width:150px !important;
+}
+body, html{
+margin:0;
+padding:0;
+background:false;
+}
+
+.form-all{
+margin:0px auto;
+padding-top:20px;
+width:650px !important;
+color:Black;
+font-family:Verdana;
+font-size:12px;
+}
+</style> 
+
+<link href='http://jotform.com/css/calendarview.css' rel='stylesheet' type='text/css' /> 
+<script src='http://jotform.com/js/prototype.js' type='text/javascript'></script> 
+<script src='http://jotform.com/js/protoplus.js' type='text/javascript'></script> 
+<script src='http://jotform.com/js/protoplus-ui.js' type='text/javascript'></script> 
+<script src='http://jotform.com/js/jotform.js?v3' type='text/javascript'></script> 
+<script src='http://jotform.com/js/location.js' type='text/javascript'></script> 
+<script src='http://jotform.com/js/calendarview.js' type='text/javascript'></script> 
+<script type='text/javascript'> 
+
+JotForm.init(function(){
+$('input_6').hint('ex: myname@example.com');
+});
+</script>';
+}else {
+
+}
+
+Is there a better way to echo large blocks of code without a lot of work (adding echo to each line for example)?
+php '"
+  tag: [disturb, question]
+- text: You are so boring, you solved my sleep problem.
+  tags: [insult]
+- text: Is your ass jealous of the amount of shit that just came out of your mouth?
+  tags: [insult]
+- text: Roses are red, violets are blue, I have 5 fingers,the 3rd ones for you.
+  tags: [insult]
+- text: You look like a before picture.
+  tags: [insult]
+- text: If you had another brain, it would be lonely.
+  tags: [insult]
+- text: Please tell me you don't home-school your kids.
+  tags: [insult]
+- text: For me {{ vip }} is stupid
+  tags: [disturb]
+- text: For me {{ buzzword }} is dead.
+  tags: [disturb]

@@ -1,0 +1,30 @@
+vip:
+    - Bill Gates 
+language:
+    - PHP
+    - Ruby
+    - Rust
+    - Golang
+    - NodeJS
+    - Shell
+ide:
+    - PHPStorm
+    - Eclipse 1
+    - NetBeans 0.3.1
+    - NetBeans 3.0.3a
+    - Android Studio
+    - PyCharm
+    - Visual Studio
+    - vi
+    - Emacs
+buzzword:
+    - docker
+    - microservices
+os:
+    - windows vista
+    - windows 3.1
+    - windows 10
+    - ChromeOS
+    - Android“, “MacOS
+    - Slackware
+    - Amiga
