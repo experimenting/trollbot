@@ -6,7 +6,7 @@ Use in Slack like `troll context` or `troll context @username` or `troll context
 liuggio 4:47 PM
  troll @liuggio shell
 trollBOT 4:47 PM
- Hey @liuggio For me Shell is better then NodeJS
+ Hey @liuggio For me Shell is better than NodeJS
 ```
 
 # Please contribute add troll to the YAML file
