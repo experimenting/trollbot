@@ -20,7 +20,7 @@
   tags: [nonsense, insult]
 - text: What's the best IDE?
   tags: [question]
-- text: "For me {{ language }} is better then {{ language }}"
+- text: "For me {{ language }} is better than {{ language }}"
   tags: [compare, language]
 - text: "{{ ide }} is better then {{ ide }}"
   tags: [compare, ide]
