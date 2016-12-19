@@ -22,7 +22,7 @@
   tags: [question]
 - text: "For me {{ language }} is better than {{ language }}"
   tags: [compare, language]
-- text: "{{ ide }} is better then {{ ide }}"
+- text: "{{ ide }} is better than {{ ide }}"
   tags: [compare, ide]
 - text: I don't get all this hype for {{ buzzword }}
   tags: [disgusted]
